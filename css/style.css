@@ -1,0 +1,1096 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+}
+
+/* header */
+
+.barranav {
+    background: #231f20;
+    background: linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
+    background: -webkit-linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
+    background: -moz-linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
+    padding: 25px 10px 25px 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iteminside {
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 55px;
+    margin: 5px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 15px 10px 15px 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #231f20;
+    font-family: 'Alegreya', serif;
+    font-size: 25px;
+    font-weight: 20px;
+    border: 2px #231f20 solid;
+    padding: 10px;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1) skew(15deg);
+    -webkit-transform: scale(1.1) skew(15deg);
+    -moz-transform: scale(1.1) skew(15deg);
+}
+
+/* main */
+
+.hero {
+    background-image: url(../img/fondoprod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F3DFA2;
+    font-family: 'Alegreya', serif;
+    height: calc(100vh - 137.5px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 55px;
+    font-weight: 50px;
+}
+
+.hero img {
+    width: 80%;
+    height: 45%;
+    margin-top: 40px;
+}
+
+.imagendos {
+    display: none;
+}
+
+.hero p {
+    font-size: 35px;
+    font-weight: 35px;
+    margin: 10px;
+}
+
+.productos {
+    background-color: #231f20;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos h2 {
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 10px;
+    color: #F3DFA2;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.prod-flex {
+    background-color: #231f20;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 15px;
+}
+
+.card-img-top {
+    background-color:#f3dfa2;
+}
+
+.card-body {
+    background-color: #7EBDC2;
+}
+
+.titulo-prod {
+    font-family: 'Alegreya', serif;
+    font-size: auto;
+    font-weight: bold;
+}
+
+.parrafo-prod { 
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.boton-prod:hover { 
+    color: #f3dfa2;
+}
+
+.catalogo {
+    color: #EAEAEA;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 35px;
+    font-weight: 22px;
+    margin-bottom: 15px;
+}
+
+.catalogo a {
+    text-decoration: none;
+    color: #F3DFA2;
+}
+
+.catalogo a:hover {
+    color: #7EBDC2;
+}
+
+.progreso {
+    background-image: url(../img/fondoprod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Alegreya', serif;
+    color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+}
+
+.progreso h2 {
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 10px;
+    color: #F3DFA2;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.perfil {
+    background-image: url(../img/fondoprod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+}
+
+.perfil p {
+    color: #EAEAEA;
+    font-size: 30px;
+}
+
+.perfil img {
+    margin-top: 10px;
+    width: 70%;
+    height: 220px;
+}
+
+.perfil a {
+    text-decoration: none;
+    color: #F3DFA2;
+    font-size: 30px;
+}
+
+.perfil a:hover {
+    color: #7EBDC2;
+}
+
+.position {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+.position img {
+    width: 45px;
+}
+
+/* footer */
+
+footer {
+    background-color: #231F20;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #EAEAEA;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    margin: 5px 10px 0 10px;
+    width: 80px;
+}
+
+.social {
+    margin: 5px 10px 0 10px;
+    width: 40px;
+}
+
+.footer-contact {
+    font-family: 'Alegreya', serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #F3DFA2;
+}
+
+.footer-contact:hover {
+    color: #7EBDC2
+}
+
+/* productos */
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 450px 450px 450px;
+    background-color: #231F20;
+    text-align: center;
+}
+
+.producto-titulo {
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 10px;
+    color: #F3DFA2;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.producto-main {
+    margin: 15px;
+    border: 2px #F3DFA2 solid;
+    padding: 10px;
+    background-image: url(../img/fondoprod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
+}
+
+.producto-main img {
+    width: 300px;
+    height: 250px;
+}
+
+.producto-main h3 {
+    color: #EAEAEA;
+    font-family: 'Alegreya', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.producto-main p {
+    color: #EAEAEA;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.producto-main a {
+    text-decoration: none;
+    color: #231F20;
+    font-family: 'Alegreya', serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #F3DFA2;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+.producto-main a:hover {
+    box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+    -webkit-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+    -moz-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+    background-color: #231F20;
+    color: #EAEAEA;
+}
+
+/* contacto */
+
+.formulario {
+    background-image: url(../img/fondoprod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F3DFA2;
+    font-family: 'Alegreya', serif;
+    font-size: 18px;
+    height: calc(100vh - 137.5px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Nosotros */
+
+.nosotros {
+    background-image: url(../img/fondoprod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Alegreya', serif;
+    height: calc(100vh - 137.5px);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nosotros div h2 {
+    display: inline-flex;
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 10px;
+    color: #F3DFA2;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.nosotros div p {
+    font-size: 32px;
+    color: #EAEAEA;
+}
+
+/* informacion */
+
+.informacion {
+    background-color: #231F20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.envio {
+    text-align: center;
+    width: 48%;
+    margin: 10px;
+    height: 783px;
+    background-image: url(../img/cargo-truck.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px #F3DFA2 solid;
+    box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+}
+
+.envio a {
+    text-decoration: none;
+    font-family: 'Alegreya', serif;
+    font-size: 35px;
+    color: #F3DFA2;
+}
+
+.envio a:hover {
+    color: #7EBDC2
+}
+
+.pago {
+    text-align: center;
+    width: 48%;
+    margin: 10px;
+    height: 783px;
+    background-image: url(../img/payment.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px #F3DFA2 solid;
+    box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+}
+
+.pago a {
+    text-decoration: none;
+    font-family: 'Alegreya', serif;
+    font-size: 35px;
+    color: #F3DFA2;
+}
+
+.pago a:hover {
+    color: #7EBDC2
+}
+
+/* perfil */
+
+.miperfil {
+    background-image: url(../img/fondoprod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Alegreya', serif;
+    height: calc(100vh - 137.5px);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.miperfil div h2 {
+    display: inline-flex;
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    color: #F3DFA2;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.miperfil div h3 {
+    font-size: 32px;
+    color: #F3DFA2;
+}
+
+.miperfil div h4 {
+    font-size: 32px;
+    color: #F3DFA2;
+}
+
+.perfildesc {
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.niveles {
+    text-align: left;
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.niveles span {
+    color: #F3DFA2;
+    text-decoration: underline;
+}
+
+/* Media query */
+
+@media screen and (max-width:2120px) {
+
+    .envio {
+        height: calc(100vh - 160px);
+    }
+
+    .pago {
+        height: calc(100vh - 160px);
+    }
+
+}
+
+@media screen and (max-width:1600px) {
+
+    .productos h2 {
+        padding: 10px;
+        margin-top: 15px;
+        font-size: 35px;
+        font-weight: 15px;
+    }
+
+    .miperfil div h2 {
+        font-size: 30px;
+    }
+
+    .miperfil div h3 {
+        font-size: 28px;
+    }
+
+    .miperfil div h4 {
+        font-size: 28px;
+    }
+
+    .perfildesc {
+        font-size: 25px;
+    }
+
+    .niveles {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:1460px) {
+
+    .hero h1 {
+        padding: 10px;
+        font-size: 50px;
+        font-weight: 20px;
+    }
+
+    .hero img {
+        width: 80%;
+        height: 40%;
+        margin-top: 20px;
+    }
+
+    .hero p {
+        font-size: 35px;
+        font-weight: 30px;
+        margin: 5px;
+    }
+
+    .productos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    .catalogo {
+        font-size: 25px;
+        font-weight: 15px;
+        margin-bottom: 15px;
+    }
+
+    .position {
+        display: none;
+    }
+
+    .miperfil div h2 {
+        font-size: 28px;
+    }
+
+    .miperfil div h3 {
+        font-size: 25px;
+    }
+
+    .miperfil div h4 {
+        font-size: 25px;
+    }
+
+    .perfildesc {
+        font-size: 20px;
+    }
+
+    .niveles {
+        font-size: 20px;
+    }
+
+    .nosotros div h2 {
+        font-size: 35px;
+    }
+
+    .nosotros div p {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:1350px) {
+
+    .productos h2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width:1220px) {
+
+    .productos h2 {
+        font-size: 30px;
+        margin-top: 18px;
+    }
+
+}
+
+@media screen and (max-width:1160px) {
+
+    .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+@media screen and (max-width:1120px) {
+
+    .informacion {
+        flex-direction: column;
+    }
+
+    .envio {
+        width: 95%;
+        height: 505px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/fondoprod.jpg);
+    }
+
+    .pago {
+        width: 95%;
+        height: 505px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/fondoprod.jpg);
+    }
+
+}
+
+
+@media screen and (max-width:1040px) {
+
+    .hero { 
+        height: calc(100vh - 125px);
+    }
+
+    .productos h2 {
+        padding: 10px;
+        margin-top: 15px;
+        font-size: 24px;
+        font-weight: 20px;
+    }
+
+    .miperfil { 
+        height: calc(100vh - 125px);
+    }
+
+    .miperfil div h2 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .miperfil div h3 {
+        font-size: 22px;
+    }
+
+    .miperfil div h4 {
+        font-size: 22px;
+    }
+
+    .perfildesc {
+        font-size: 18px;
+    }
+
+    .niveles {
+        font-size: 18px;
+    }
+
+    .nosotros { 
+        height: calc(100vh - 125px);
+    }
+
+    .nosotros div h2 {
+        font-size: 32px;
+    }
+
+    .nosotros div p {
+        font-size: 25px;
+    }
+
+    .formulario { 
+        height: calc(100vh - 125px);
+    }
+
+}
+
+@media screen and (max-width:990px) {
+
+    .envio {
+        height: 510px;
+    }
+
+    .pago {
+        height: 510px;
+    }
+
+}
+
+@media screen and (max-width:840px) {
+
+    .logo {
+        width: 65px;
+        height: 35px;
+        margin: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        font-weight: 15px;
+        padding: 5px;
+    }
+
+    .hero {
+        height: calc(100vh - 107px);
+    }
+
+    .hero h1 {
+        padding: 10px;
+        font-size: 40px;
+        font-weight: 15px;
+    }
+
+    .hero p {
+        font-size: 28px;
+        font-weight: 15px;
+        margin: 5px;
+    }
+
+    .productos h2 {
+        padding: 10px;
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 10px;
+    }
+
+    .progreso h2 {
+        font-size: 25px;
+    }
+
+    .perfil p {
+        font-size: 20px;
+    }
+
+    .perfil img {
+        display: none;
+    }
+
+    .perfil a {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .footer-contact {
+        font-size: 18px;
+    }
+
+    .footer-logo {
+        width: 50px;
+    }
+
+    .social {
+        width: 35px;
+    }
+
+    .miperfil {
+        height: calc(100vh - 107px);
+    }
+
+    .miperfil div h2 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .miperfil div h3 {
+        font-size: 22px;
+    }
+
+    .miperfil div h4 {
+        font-size: 22px;
+    }
+
+    .perfildesc {
+        font-size: 18px;
+    }
+
+    .niveles {
+        font-size: 18px;
+    }
+
+    .nosotros {
+        height: calc(100vh - 107px);
+    }
+
+    .formulario {
+        height: calc(100vh - 107px);
+    }
+
+    .envio {
+        height: 520px;
+    }
+
+    .pago {
+        height: 520px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .productos-grid {
+    grid-template-columns: 1fr;
+}
+
+    .productos h2 {
+        font-size: 18px;
+        font-weight: 15px;
+    }
+
+    .nosotros div h2 {
+        font-size: 25px;
+    }
+
+    .nosotros div p {
+        font-size: 18px;
+    }
+
+    .imagenuno {
+        display: none;
+    }
+
+    .imagendos {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+
+    .logo {
+        width: 65px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+        font-weight: 10px;
+        padding: 5px;
+    }
+
+    header {
+        position: relative;
+    }
+
+
+    .hero h1 {
+        padding: 10px;
+        font-size: 28px;
+        font-weight: 12px;
+    }
+
+    .hero p {
+        font-size: 25px;
+        font-weight: 12px;
+        margin: 16px;
+    }
+
+    .productos h2 {
+        padding: 5px;
+        margin: 15px 10px 0 10px;
+        font-size: 18px;
+        font-weight: 10px;
+    }
+
+    .progreso h2 {
+        font-size: 22px;
+    }
+
+    .perfil p {
+        font-size: 18px;
+    }
+
+    .perfil a {
+        font-size: 20px;
+    }
+
+    .miperfil { 
+        height: calc(100vh - 100px);
+    }
+
+    .miperfil div h2 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .miperfil div h3 {
+        font-size: 18px;
+    }
+
+    .miperfil div h4 {
+        font-size: 18px;
+    }
+
+    .perfildesc {
+        font-size: 16px;
+    }
+
+    .niveles {
+        font-size: 16px;
+    }
+
+    .nosotros { 
+        height: calc(100vh - 100px);
+    }
+
+    .nosotros div h2 {
+        font-size: 25px;
+    }
+
+    .nosotros div p {
+        font-size: 20px;
+    }
+
+    .formulario { 
+        height: calc(100vh - 100px);
+    }
+
+    .envio {
+        height: 525px;
+    }
+
+    .pago {
+        height: 525px;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 45px;
+        height: 25px;
+        margin: 2px;
+    }
+
+    header nav ul li a {
+        font-size: 11px;
+        font-weight: 10px;
+        padding: 2px;
+    }
+
+    header nav ul li {
+        margin: 10px 5px 5px 5px;
+    }
+
+    .hero { 
+        height: calc(100vh - 90.98px);
+    }
+
+    .hero h1 {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 10px;
+        margin-top: 2px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        font-weight: 10px;
+        margin: 16px;
+    }
+
+    .catalogo {
+        font-size: 20px;
+    }
+
+    .progreso h2 {
+        font-size: 18px;
+    }
+
+    .perfil p {
+        font-size: 15px;
+    }
+
+    .perfil a {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    .miperfil { 
+        height: calc(100vh - 90.98px);
+    }
+
+    .miperfil div h2 {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .miperfil div h3 {
+        font-size: 16px;
+    }
+
+    .miperfil div h4 {
+        font-size: 16px;
+    }
+
+    .perfildesc {
+        font-size: 15px;
+    }
+
+    .niveles {
+        font-size: 15px;
+    }
+
+    .nosotros { 
+        height: calc(100vh - 90.98px);
+    }
+
+    .nosotros div h2 {
+        font-size: 22px;
+    }
+
+    .nosotros div p {
+        font-size: 18px;
+    }
+
+    .formulario { 
+        height: calc(100vh - 90.98px);
+    }
+
+    .envio {
+        height: 530px;
+    }
+
+    .pago {
+        height: 530px;
+    }
+
+}
