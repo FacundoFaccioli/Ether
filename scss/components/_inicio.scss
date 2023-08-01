@@ -1,0 +1,38 @@
+main{
+    section{
+        background-image: url(../img/fondoprod.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #F3DFA2;
+        font-family: 'Alegreya', serif;
+        height: calc(100vh - 137.5px);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            border: 2px #7EBDC2 solid;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 55px;
+            font-weight: 50px;
+        }
+        .imagenuno{
+            width: 80%;
+            height: 45%;
+            margin-top: 40px;
+        }  
+        .imagendos{
+            display: none;
+        }
+        p{
+            font-size: 35px;
+            font-weight: 35px;
+            margin: 10px;
+        }
+    }
+}
+

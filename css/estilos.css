@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Alegreya', serif; }
+
+header nav {
+  background: #231f20;
+  background: linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
+  background: -webkit-linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
+  background: -moz-linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
+  padding: 25px 10px 25px 10px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header nav div a .logo {
+    width: 80px;
+    height: 55px;
+    margin: 5px; }
+  header nav div ul {
+    display: flex;
+    list-style: none; }
+    header nav div ul li {
+      margin: 15px 10px 15px 10px; }
+      header nav div ul li a {
+        text-decoration: none;
+        color: #231f20;
+        font-family: 'Alegreya', serif;
+        font-size: 25px;
+        font-weight: 20px;
+        border: 2px #231f20 solid;
+        padding: 10px; }
+        header nav div ul li a:hover {
+          transform: scale(1.1) skew(15deg);
+          -webkit-transform: scale(1.1) skew(15deg);
+          -moz-transform: scale(1.1) skew(15deg); }
+
+main section {
+  background-image: url(../img/fondoprod.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #F3DFA2;
+  font-family: 'Alegreya', serif;
+  height: calc(100vh - 137.5px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  main section h1 {
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 55px;
+    font-weight: 50px; }
+  main section .imagenuno {
+    width: 80%;
+    height: 45%;
+    margin-top: 40px; }
+  main section .imagendos {
+    display: none; }
+  main section p {
+    font-size: 35px;
+    font-weight: 35px;
+    margin: 10px; }
+
+footer {
+  background-color: #231F20;
+  text-align: center; }
+  footer p {
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #EAEAEA; }
+  footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer section div img {
+      margin: 5px 10px 0 10px;
+      width: 80px; }
+  footer div a img {
+    margin: 5px 10px 0 10px;
+    width: 40px; }
+  footer a {
+    font-family: 'Alegreya', serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #F3DFA2; }
+    footer a:hover {
+      color: #7EBDC2; }
