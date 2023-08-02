@@ -1,5 +1,5 @@
 main{
-    section{
+    .hero{
         background-image: url(../img/fondoprod.jpg);
         background-position: center;
         background-size: cover;
@@ -7,7 +7,7 @@ main{
         background-attachment: fixed;
         color: #F3DFA2;
         font-family: 'Alegreya', serif;
-        height: calc(100vh - 137.5px);
+        height: calc(100vh - 103.5px);
         text-align: center;
         display: flex;
         justify-content: center;
@@ -34,5 +34,123 @@ main{
             margin: 10px;
         }
     }
+    .productos{
+        background-color: #231f20;
+        font-family: 'Alegreya', serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            border: 2px #7EBDC2 solid;
+            padding: 10px;
+            margin-top: 10px;
+            color: #F3DFA2;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        p{
+            color: #EAEAEA;
+            text-align: center;
+            font-family: 'Alegreya', serif;
+            font-size: 35px;
+            font-weight: 22px;
+            margin-bottom: 15px;
+            a{
+                text-decoration: none;
+                color: #F3DFA2;
+                &:hover{
+                    color: #7EBDC2;
+                }
+            }
+        }
+    }
+    .prod-flex{
+        background-color: #231f20;
+        font-family: 'Alegreya', serif;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .card{
+            margin: 10px;
+            .card-img-top{
+                background-color:#f3dfa2;
+            }
+            .card-body{
+                background-color: #7EBDC2;
+                .titulo-prod{
+                    color: #231f20;
+                    font-family: 'Alegreya', serif;
+                    font-size: auto;
+                    font-weight: bold;
+                }
+                .parrafo-prod{
+                    color: #231f20;
+                    font-family: 'Alegreya', serif;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+                .boton-prod:hover{
+                    color: #f3dfa2;
+                }
+            }
+        }
+    }
+    .progreso{
+        background-image: url(../img/fondoprod.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Alegreya', serif;
+        color: #EAEAEA;
+        display: flex;
+        justify-content: center;
+        h2{
+            border: 2px #7EBDC2 solid;
+            padding: 10px;
+            margin-top: 10px;
+            color: #F3DFA2;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+    }
+    .perfil{
+        background-image: url(../img/fondoprod.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Alegreya', serif;
+        text-align: center;
+        img{
+            margin-top: 10px;
+            width: 70%;
+            height: 220px;
+        }
+        p{
+            color: #EAEAEA;
+            font-size: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: #F3DFA2;
+            font-size: 30px;
+            &:hover{
+                color: #7EBDC2;
+            }
+        }
+    }
 }
 
+.position{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    img{
+        width: 45px;
+    }
+}

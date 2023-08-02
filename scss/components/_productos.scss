@@ -1,0 +1,66 @@
+main{
+    .productos{
+        .producto-titulo{
+            border: 2px #7EBDC2 solid;
+            padding: 10px;
+            margin-top: 10px;
+            color: #F3DFA2;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+    }
+    .productos-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 450px 450px 450px;
+        background-color: #231F20;
+        text-align: center;
+        .producto-main{
+            margin: 15px;
+            border: 2px #F3DFA2 solid;
+            padding: 10px;
+            background-image: url(../img/fondoprod.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
+            img{
+                width: 300px;
+                height: 250px;
+            }
+            h3{
+                color: #EAEAEA;
+                font-family: 'Alegreya', serif;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            p{
+                color: #EAEAEA;
+                font-family: 'Alegreya', serif;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            a{
+                text-decoration: none;
+                color: #231F20;
+                font-family: 'Alegreya', serif;
+                font-size: 24px;
+                font-weight: bold;
+                background-color: #F3DFA2;
+                padding: 3px;
+                border-radius: 15px;
+                &:hover{
+                    box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+                    -webkit-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+                    -moz-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+                    background-color: #231F20;
+                    color: #EAEAEA;
+                }
+            }
+        }
+    }
+}

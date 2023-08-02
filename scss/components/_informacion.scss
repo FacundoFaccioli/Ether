@@ -1,0 +1,51 @@
+.informacion{
+    background-color: #231F20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 103.5px);
+    .envio{
+        text-align: center;
+        width: 48%;
+        margin: 10px;
+        height: 840px;
+        background-image: url(../img/cargo-truck.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 3px #F3DFA2 solid;
+        box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+        a{
+            text-decoration: none;
+            font-family: 'Alegreya', serif;
+            font-size: 35px;
+            color: #F3DFA2;
+            &:hover{
+                color: #7EBDC2
+            }
+        }
+    }
+    .pago{
+        text-align: center;
+        width: 48%;
+        margin: 10px;
+        height: 840px;
+        background-image: url(../img/payment.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 3px #F3DFA2 solid;
+        box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+        a{
+            text-decoration: none;
+            font-family: 'Alegreya', serif;
+            font-size: 35px;
+            color: #F3DFA2;
+            &:hover{
+                color: #7EBDC2
+            }
+        }
+    }
+}

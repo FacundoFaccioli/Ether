@@ -1,0 +1,46 @@
+main{
+    .miperfil{
+        background-image: url(../img/fondoprod.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Alegreya', serif;
+        height: calc(100vh - 103.5px);
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        div{
+            h2{
+                display: inline-flex;
+                border: 2px #7EBDC2 solid;
+                padding: 10px;
+                color: #F3DFA2;
+                font-size: 35px;
+                font-weight: bolder;
+            }
+            h3{
+                font-size: 32px;
+                color: #F3DFA2;
+            }
+            .perfildesc{
+                font-size: 28px;
+                color: #EAEAEA;
+            }
+            h4{
+                font-size: 32px;
+                color: #F3DFA2;
+            }
+            .niveles{
+                text-align: left;
+                font-size: 28px;
+                color: #EAEAEA;
+                span{
+                    color: #F3DFA2;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

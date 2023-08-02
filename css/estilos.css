@@ -39,7 +39,7 @@ header nav {
           -webkit-transform: scale(1.1) skew(15deg);
           -moz-transform: scale(1.1) skew(15deg); }
 
-main section {
+main .hero {
   background-image: url(../img/fondoprod.jpg);
   background-position: center;
   background-size: cover;
@@ -47,28 +47,305 @@ main section {
   background-attachment: fixed;
   color: #F3DFA2;
   font-family: 'Alegreya', serif;
-  height: calc(100vh - 137.5px);
+  height: calc(100vh - 103.5px);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  main section h1 {
+  main .hero h1 {
     border: 2px #7EBDC2 solid;
     padding: 10px;
     margin-top: 5px;
     font-size: 55px;
     font-weight: 50px; }
-  main section .imagenuno {
+  main .hero .imagenuno {
     width: 80%;
     height: 45%;
     margin-top: 40px; }
-  main section .imagendos {
+  main .hero .imagendos {
     display: none; }
-  main section p {
+  main .hero p {
     font-size: 35px;
     font-weight: 35px;
     margin: 10px; }
+
+main .productos {
+  background-color: #231f20;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .productos h2 {
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 10px;
+    color: #F3DFA2;
+    font-size: 40px;
+    font-weight: bolder; }
+  main .productos p {
+    color: #EAEAEA;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 35px;
+    font-weight: 22px;
+    margin-bottom: 15px; }
+    main .productos p a {
+      text-decoration: none;
+      color: #F3DFA2; }
+      main .productos p a:hover {
+        color: #7EBDC2; }
+
+main .prod-flex {
+  background-color: #231f20;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .prod-flex .card {
+    margin: 10px; }
+    main .prod-flex .card .card-img-top {
+      background-color: #f3dfa2; }
+    main .prod-flex .card .card-body {
+      background-color: #7EBDC2; }
+      main .prod-flex .card .card-body .titulo-prod {
+        color: #231f20;
+        font-family: 'Alegreya', serif;
+        font-size: auto;
+        font-weight: bold; }
+      main .prod-flex .card .card-body .parrafo-prod {
+        color: #231f20;
+        font-family: 'Alegreya', serif;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px; }
+      main .prod-flex .card .card-body .boton-prod:hover {
+        color: #f3dfa2; }
+
+main .progreso {
+  background-image: url(../img/fondoprod.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Alegreya', serif;
+  color: #EAEAEA;
+  display: flex;
+  justify-content: center; }
+  main .progreso h2 {
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 10px;
+    color: #F3DFA2;
+    font-size: 40px;
+    font-weight: bolder; }
+
+main .perfil {
+  background-image: url(../img/fondoprod.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Alegreya', serif;
+  text-align: center; }
+  main .perfil img {
+    margin-top: 10px;
+    width: 70%;
+    height: 220px; }
+  main .perfil p {
+    color: #EAEAEA;
+    font-size: 30px; }
+  main .perfil a {
+    text-decoration: none;
+    color: #F3DFA2;
+    font-size: 30px; }
+    main .perfil a:hover {
+      color: #7EBDC2; }
+
+.position {
+  position: fixed;
+  bottom: 30px;
+  right: 40px; }
+  .position img {
+    width: 45px; }
+
+main .productos .producto-titulo {
+  border: 2px #7EBDC2 solid;
+  padding: 10px;
+  margin-top: 10px;
+  color: #F3DFA2;
+  font-size: 40px;
+  font-weight: bolder; }
+
+main .productos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 450px 450px 450px;
+  background-color: #231F20;
+  text-align: center; }
+  main .productos-grid .producto-main {
+    margin: 15px;
+    border: 2px #F3DFA2 solid;
+    padding: 10px;
+    background-image: url(../img/fondoprod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75); }
+    main .productos-grid .producto-main img {
+      width: 300px;
+      height: 250px; }
+    main .productos-grid .producto-main h3 {
+      color: #EAEAEA;
+      font-family: 'Alegreya', serif;
+      font-size: 25px;
+      font-weight: bold; }
+    main .productos-grid .producto-main p {
+      color: #EAEAEA;
+      font-family: 'Alegreya', serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px; }
+    main .productos-grid .producto-main a {
+      text-decoration: none;
+      color: #231F20;
+      font-family: 'Alegreya', serif;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #F3DFA2;
+      padding: 3px;
+      border-radius: 15px; }
+      main .productos-grid .producto-main a:hover {
+        box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+        -webkit-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+        -moz-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
+        background-color: #231F20;
+        color: #EAEAEA; }
+
+.informacion {
+  background-color: #231F20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 103.5px); }
+  .informacion .envio {
+    text-align: center;
+    width: 48%;
+    margin: 10px;
+    height: 840px;
+    background-image: url(../img/cargo-truck.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px #F3DFA2 solid;
+    box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75); }
+    .informacion .envio a {
+      text-decoration: none;
+      font-family: 'Alegreya', serif;
+      font-size: 35px;
+      color: #F3DFA2; }
+      .informacion .envio a:hover {
+        color: #7EBDC2; }
+  .informacion .pago {
+    text-align: center;
+    width: 48%;
+    margin: 10px;
+    height: 840px;
+    background-image: url(../img/payment.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px #F3DFA2 solid;
+    box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75); }
+    .informacion .pago a {
+      text-decoration: none;
+      font-family: 'Alegreya', serif;
+      font-size: 35px;
+      color: #F3DFA2; }
+      .informacion .pago a:hover {
+        color: #7EBDC2; }
+
+main .miperfil {
+  background-image: url(../img/fondoprod.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Alegreya', serif;
+  height: calc(100vh - 103.5px);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  main .miperfil div h2 {
+    display: inline-flex;
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    color: #F3DFA2;
+    font-size: 35px;
+    font-weight: bolder; }
+  main .miperfil div h3 {
+    font-size: 32px;
+    color: #F3DFA2; }
+  main .miperfil div .perfildesc {
+    font-size: 28px;
+    color: #EAEAEA; }
+  main .miperfil div h4 {
+    font-size: 32px;
+    color: #F3DFA2; }
+  main .miperfil div .niveles {
+    text-align: left;
+    font-size: 28px;
+    color: #EAEAEA; }
+    main .miperfil div .niveles span {
+      color: #F3DFA2;
+      text-decoration: underline; }
+
+main .nosotros {
+  background-image: url(../img/fondoprod.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Alegreya', serif;
+  height: calc(100vh - 103.5px);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  main .nosotros div h2 {
+    display: inline-flex;
+    border: 2px #7EBDC2 solid;
+    padding: 10px;
+    margin-top: 10px;
+    color: #F3DFA2;
+    font-size: 40px;
+    font-weight: bolder; }
+  main .nosotros div p {
+    font-size: 32px;
+    color: #EAEAEA; }
+
+.formulario {
+  background-image: url(../img/fondoprod.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #F3DFA2;
+  font-family: 'Alegreya', serif;
+  font-size: 18px;
+  height: calc(100vh - 103.5px);
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
 
 footer {
   background-color: #231F20;
