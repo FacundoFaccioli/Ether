@@ -204,12 +204,12 @@ main .productos-grid {
     main .productos-grid .producto-main h3 {
       color: #EAEAEA;
       font-family: 'Alegreya', serif;
-      font-size: 25px;
+      font-size: 19px;
       font-weight: bold; }
     main .productos-grid .producto-main p {
       color: #EAEAEA;
       font-family: 'Alegreya', serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       margin-bottom: 15px; }
     main .productos-grid .producto-main a {
@@ -372,3 +372,222 @@ footer {
     color: #F3DFA2; }
     footer a:hover {
       color: #7EBDC2; }
+
+@media screen and (max-width: 1630px) {
+  .informacion .envio {
+    height: 750px; }
+  .informacion .pago {
+    height: 750px; } }
+
+@media screen and (max-width: 1580px) {
+  main .miperfil div h2 {
+    font-size: 30px; }
+  main .miperfil div h3 {
+    font-size: 28px; }
+  main .miperfil div h4 {
+    font-size: 28px; }
+  main .miperfil div .perfildesc {
+    font-size: 25px; }
+  main .miperfil div .niveles {
+    font-size: 25px; } }
+
+@media screen and (max-width: 1530px) {
+  main .productos .producto-titulo {
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 15px; } }
+
+@media screen and (max-width: 1490px) {
+  main .productos h2 {
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 15px; } }
+
+@media screen and (max-width: 1430px) {
+  main .productos-grid {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 1350px) {
+  main .productos .producto-titulo {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1270px) {
+  main .miperfil div h2 {
+    font-size: 28px; }
+  main .miperfil div h3 {
+    font-size: 25px; }
+  main .miperfil div h4 {
+    font-size: 25px; }
+  main .miperfil div .perfildesc {
+    font-size: 20px; }
+  main .miperfil div .niveles {
+    font-size: 20px; } }
+
+@media screen and (max-width: 1210px) {
+  main .productos h2 {
+    font-size: 30px;
+    margin-top: 18px; } }
+
+@media screen and (max-width: 1160px) {
+  .informacion {
+    flex-direction: column; }
+  .informacion .envio {
+    width: 95%;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondoprod.jpg); }
+  .informacion .pago {
+    width: 95%;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondoprod.jpg); }
+  main .productos-grid {
+    grid-template-columns: repeat(2, 1fr); }
+  main .productos .producto-titulo {
+    font-size: 25px; }
+  .position {
+    display: none; }
+  main .hero h1 {
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 20px; }
+  main .hero img {
+    width: 80%;
+    height: 40%;
+    margin-top: 20px; }
+  main .hero p {
+    font-size: 30px;
+    font-weight: 30px;
+    margin: 5px; } }
+
+@media screen and (max-width: 1050px) {
+  main .productos h2 {
+    margin: 20px;
+    font-size: 30px; }
+  main .productos p {
+    font-size: 28px; }
+  main .progreso h2 {
+    font-size: 30px; }
+  main .perfil p {
+    font-size: 25px;
+    margin: 8px; }
+  main .perfil a {
+    font-size: 25px; } }
+
+@media screen and (max-width: 993px) {
+  main .hero {
+    height: calc(100vh - 91px); }
+  main .miperfil {
+    height: calc(100vh - 91px); }
+  .informacion {
+    height: calc(100vh - 91px); }
+  .formulario {
+    height: calc(100vh - 91px); }
+  main .nosotros {
+    height: calc(100vh - 91px); }
+  main .nosotros div h2 {
+    font-size: 35px; }
+  main .nosotros div p {
+    font-size: 26px; } }
+
+@media screen and (max-width: 750px) {
+  main .miperfil div h2 {
+    font-size: 24px; }
+  main .miperfil div h3 {
+    font-size: 20px; }
+  main .miperfil div h4 {
+    font-size: 20px; }
+  main .miperfil div .perfildesc {
+    font-size: 16px; }
+  main .miperfil div .niveles {
+    font-size: 16px; } }
+
+@media screen and (max-width: 715px) {
+  main .hero h1 {
+    font-size: 35px; }
+  main .hero p {
+    font-size: 22px; }
+  main .productos-grid {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 650px) {
+  main .nosotros div h2 {
+    font-size: 32px; }
+  main .nosotros div p {
+    font-size: 22px; } }
+
+@media screen and (max-width: 590px) {
+  main .hero h1 {
+    font-size: 30px; }
+  main .hero p {
+    font-size: 20px; }
+  main .hero .imagenuno {
+    display: none; }
+  main .hero .imagendos {
+    display: flex; }
+  main .productos h2 {
+    font-size: 24px; }
+  main .productos p {
+    font-size: 22px; }
+  main .progreso h2 {
+    font-size: 24px; }
+  main .perfil p {
+    font-size: 20px; }
+  main .perfil a {
+    font-size: 22px; }
+  main .productos .producto-titulo {
+    font-size: 20px; }
+  footer p {
+    font-size: 20px; }
+  footer a {
+    font-size: 18px; }
+  footer section div img {
+    width: 50px; }
+  footer section div a img {
+    width: 35px; } }
+
+@media screen and (max-width: 483px) {
+  main .hero h1 {
+    font-size: 20px; }
+  main .hero p {
+    font-size: 18px; }
+  main .productos h2 {
+    font-size: 18px;
+    margin: 6px; }
+  main .productos p {
+    font-size: 18px; }
+  main .productos .producto-titulo {
+    font-size: 16px;
+    padding: 5px; }
+  main .miperfil div h2 {
+    font-size: 16px; }
+  main .miperfil div h3 {
+    font-size: 15px; }
+  main .miperfil div h4 {
+    font-size: 15px; }
+  main .miperfil div .perfildesc {
+    font-size: 14px; }
+  main .miperfil div .niveles {
+    font-size: 14px;
+    margin: 3px; }
+  main .nosotros div h2 {
+    font-size: 25px; }
+  main .nosotros div p {
+    font-size: 18px; } }
+
+@media screen and (max-width: 400px) {
+  main .progreso h2 {
+    font-size: 20px; }
+  main .perfil p {
+    font-size: 16px; }
+  main .perfil a {
+    font-size: 18px; }
+  footer p {
+    font-size: 18px;
+    margin-bottom: 8px; } }
