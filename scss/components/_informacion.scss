@@ -1,5 +1,5 @@
 .informacion{
-    background-color: #231F20;
+    background-color: $color-primario;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
         background-image: url(../img/cargo-truck.png);
         background-position: center;
         background-repeat: no-repeat;
-        border: 3px #F3DFA2 solid;
+        border: 3px $color-secundario solid;
         box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
         -webkit-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
         -moz-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
@@ -20,9 +20,9 @@
             text-decoration: none;
             font-family: 'Alegreya', serif;
             font-size: 35px;
-            color: #F3DFA2;
+            color: $color-secundario;
             &:hover{
-                color: #7EBDC2
+                color: $color-terciario;
             }
         }
     }
@@ -34,7 +34,7 @@
         background-image: url(../img/payment.png);
         background-position: center;
         background-repeat: no-repeat;
-        border: 3px #F3DFA2 solid;
+        border: 3px $color-secundario solid;
         box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
         -webkit-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
         -moz-box-shadow: 10px 10px 5px 0px rgba(243, 223, 162, 0.75);
@@ -42,9 +42,9 @@
             text-decoration: none;
             font-family: 'Alegreya', serif;
             font-size: 35px;
-            color: #F3DFA2;
+            color: $color-secundario;
             &:hover{
-                color: #7EBDC2
+                color:$color-terciario;
             }
         }
     }

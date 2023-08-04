@@ -14,16 +14,16 @@ main{
         div{
             h2{
                 display: inline-flex;
-                border: 2px #7EBDC2 solid;
+                border: 2px $color-terciario solid;
                 padding: 10px;
                 margin-top: 10px;
-                color: #F3DFA2;
+                color: $color-secundario;
                 font-size: 40px;
                 font-weight: bolder;
             }
             p{
                 font-size: 32px;
-                color: #EAEAEA;
+                color: $color-cuaternario;
             }
         }
     }

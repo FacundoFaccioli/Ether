@@ -5,7 +5,7 @@ main{
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        color: #F3DFA2;
+        color: $color-secundario;
         font-family: 'Alegreya', serif;
         height: calc(100vh - 103.5px);
         text-align: center;
@@ -14,7 +14,7 @@ main{
         align-items: center;
         flex-direction: column;
         h1{
-            border: 2px #7EBDC2 solid;
+            border: 2px $color-terciario solid;
             padding: 10px;
             margin-top: 5px;
             font-size: 55px;
@@ -35,22 +35,22 @@ main{
         }
     }
     .productos{
-        background-color: #231f20;
+        background-color: $color-primario;
         font-family: 'Alegreya', serif;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         h2{
-            border: 2px #7EBDC2 solid;
+            border: 2px $color-terciario solid;
             padding: 10px;
             margin-top: 10px;
-            color: #F3DFA2;
+            color: $color-secundario;
             font-size: 40px;
             font-weight: bolder;
         }
         p{
-            color: #EAEAEA;
+            color: $color-cuaternario;
             text-align: center;
             font-family: 'Alegreya', serif;
             font-size: 35px;
@@ -58,15 +58,15 @@ main{
             margin-bottom: 15px;
             a{
                 text-decoration: none;
-                color: #F3DFA2;
+                color: $color-secundario;
                 &:hover{
-                    color: #7EBDC2;
+                    color: $color-terciario;
                 }
             }
         }
     }
     .prod-flex{
-        background-color: #231f20;
+        background-color: $color-primario;
         font-family: 'Alegreya', serif;
         text-align: center;
         display: flex;
@@ -76,25 +76,25 @@ main{
         .card{
             margin: 10px;
             .card-img-top{
-                background-color:#f3dfa2;
+                background-color: $color-secundario;
             }
             .card-body{
-                background-color: #7EBDC2;
+                background-color: $color-terciario;
                 .titulo-prod{
-                    color: #231f20;
+                    color: $color-primario;
                     font-family: 'Alegreya', serif;
                     font-size: auto;
                     font-weight: bold;
                 }
                 .parrafo-prod{
-                    color: #231f20;
+                    color: $color-primario;
                     font-family: 'Alegreya', serif;
                     font-size: 20px;
                     font-weight: bold;
                     margin-bottom: 15px;
                 }
                 .boton-prod:hover{
-                    color: #f3dfa2;
+                    color: $color-secundario;
                 }
             }
         }
@@ -106,14 +106,14 @@ main{
         background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: 'Alegreya', serif;
-        color: #EAEAEA;
+        color: $color-cuaternario;
         display: flex;
         justify-content: center;
         h2{
-            border: 2px #7EBDC2 solid;
+            border: 2px $color-terciario solid;
             padding: 10px;
             margin-top: 10px;
-            color: #F3DFA2;
+            color: $color-secundario;
             font-size: 40px;
             font-weight: bolder;
         }
@@ -132,15 +132,15 @@ main{
             height: 220px;
         }
         p{
-            color: #EAEAEA;
+            color: $color-cuaternario;
             font-size: 30px;
         }
         a{
             text-decoration: none;
-            color: #F3DFA2;
+            color: $color-secundario;
             font-size: 30px;
             &:hover{
-                color: #7EBDC2;
+                color: $color-terciario;
             }
         }
     }

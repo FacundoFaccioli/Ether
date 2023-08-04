@@ -1,11 +1,11 @@
 footer{
-    background-color: #231F20;
+    background-color: $color-primario;
     text-align: center;
     p{
         font-family: 'Alegreya', serif;
         font-size: 30px;
         font-weight: bolder;
-        color: #EAEAEA;
+        color: $color-cuaternario;
     }
     section{
         display: flex;
@@ -30,9 +30,9 @@ footer{
         font-family: 'Alegreya', serif;
         font-size: 25px;
         text-decoration: none;
-        color: #F3DFA2;
+        color: $color-secundario;
         &:hover{
-            color: #7EBDC2
+            color: $color-terciario;
         }
     }
 }

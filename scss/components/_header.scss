@@ -1,9 +1,9 @@
 header{
     nav{
-        background: #231f20;
-        background: linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
-        background: -webkit-linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
-        background: -moz-linear-gradient(90deg, #231f20 0%, #f3dfa2 95%);
+        background: $color-primario;
+        background: linear-gradient(90deg, $color-primario 0%, $color-secundario 95%);
+        background: -webkit-linear-gradient(90deg, $color-primario 0%, $color-secundario 95%);
+        background: -moz-linear-gradient(90deg, $color-primario 0%, $color-secundario 95%);
         padding: 25px 10px 25px 10px;
         position: sticky;
         top: 0;
@@ -27,11 +27,11 @@ header{
                     margin: 15px 10px 15px 10px;
                         a{
                             text-decoration: none;
-                            color: #231f20;
+                            color: $color-primario;
                             font-family: 'Alegreya', serif;
                             font-size: 25px;
                             font-weight: 20px;
-                            border: 2px #231f20 solid;
+                            border: 2px $color-primario solid;
                             padding: 10px;
                             &:hover{
                                 transform: scale(1.1) skew(15deg);

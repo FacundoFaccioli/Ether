@@ -1,10 +1,10 @@
 main{
     .productos{
         .producto-titulo{
-            border: 2px #7EBDC2 solid;
+            border: 2px $color-terciario solid;
             padding: 10px;
             margin-top: 10px;
-            color: #F3DFA2;
+            color: $color-secundario;
             font-size: 40px;
             font-weight: bolder;
         }
@@ -13,11 +13,11 @@ main{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 450px 450px 450px;
-        background-color: #231F20;
+        background-color: $color-primario;
         text-align: center;
         .producto-main{
             margin: 15px;
-            border: 2px #F3DFA2 solid;
+            border: 2px $color-secundario solid;
             padding: 10px;
             background-image: url(../img/fondoprod.jpg);
             background-position: center;
@@ -32,13 +32,13 @@ main{
                 height: 250px;
             }
             h3{
-                color: #EAEAEA;
+                color: $color-cuaternario;
                 font-family: 'Alegreya', serif;
                 font-size: 19px;
                 font-weight: bold;
             }
             p{
-                color: #EAEAEA;
+                color: $color-cuaternario;
                 font-family: 'Alegreya', serif;
                 font-size: 18px;
                 font-weight: bold;
@@ -46,19 +46,19 @@ main{
             }
             a{
                 text-decoration: none;
-                color: #231F20;
+                color: $color-primario;
                 font-family: 'Alegreya', serif;
                 font-size: 24px;
                 font-weight: bold;
-                background-color: #F3DFA2;
+                background-color: $color-secundario;
                 padding: 3px;
                 border-radius: 15px;
                 &:hover{
                     box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
                     -webkit-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
                     -moz-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
-                    background-color: #231F20;
-                    color: #EAEAEA;
+                    background-color: $color-primario;
+                    color: $color-cuaternario;
                 }
             }
         }

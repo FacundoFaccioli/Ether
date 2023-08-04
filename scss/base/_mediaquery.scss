@@ -1,4 +1,4 @@
-@media screen and (max-width:1630px) {
+@media screen and (max-width:nth($media-query, 1)) {
     .informacion .envio {
         height: 750px;
     }
@@ -8,7 +8,7 @@
     }
 }
 
-@media screen and (max-width:1580px) {
+@media screen and (max-width:nth($media-query, 2)) {
     main .miperfil div h2 {
         font-size: 30px;
     }
@@ -30,7 +30,7 @@
     }
 }
 
-@media screen and (max-width:1530px) {
+@media screen and (max-width:nth($media-query, 3)) {
     main .productos .producto-titulo {
         padding: 10px;
         margin-top: 15px;
@@ -39,7 +39,7 @@
     }
 }
 
-@media screen and (max-width:1490px) {
+@media screen and (max-width:nth($media-query, 4)) {
     main .productos h2 {
         padding: 10px;
         margin-top: 15px;
@@ -48,19 +48,19 @@
     }
 }
 
-@media screen and (max-width:1430px) {
+@media screen and (max-width:nth($media-query, 5)) {
     main .productos-grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:nth($media-query, 6)) {
     main .productos .producto-titulo {
         font-size: 30px;
     }
 }
 
-@media screen and (max-width:1270px) {
+@media screen and (max-width:nth($media-query, 7)) {
     main .miperfil div h2 {
         font-size: 28px;
     }
@@ -82,14 +82,14 @@
     }
 }
 
-@media screen and (max-width:1210px) {
+@media screen and (max-width:nth($media-query, 8)) {
     main .productos h2 {
         font-size: 30px;
         margin-top: 18px;
     }
 }
 
-@media screen and (max-width:1160px) {
+@media screen and (max-width:nth($media-query, 9)) {
     .informacion {
         flex-direction: column;
     }
@@ -143,7 +143,7 @@
     }
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:nth($media-query, 10)) {
     main .productos h2 {
         margin: 20px;
         font-size: 30px;
@@ -167,7 +167,7 @@
     }
 }
 
-@media screen and (max-width:993px) {
+@media screen and (max-width:nth($media-query, 11)) {
     main .hero{
         height: calc(100vh - 91px);
     }
@@ -197,7 +197,7 @@
     }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:nth($media-query, 12)) {
     main .miperfil div h2 {
         font-size: 24px;
     }
@@ -219,7 +219,7 @@
     }
 }
 
-@media screen and (max-width:715px) {
+@media screen and (max-width:nth($media-query, 13)) {
     main .hero h1{
         font-size: 35px;
     }
@@ -233,7 +233,7 @@
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:nth($media-query, 14)) {
     main .nosotros div h2{
         font-size: 32px;
     }
@@ -244,7 +244,7 @@
 }
 
 
-@media screen and (max-width:590px) {
+@media screen and (max-width:nth($media-query, 15)) {
     main .hero h1{
         font-size: 30px;
     }
@@ -302,7 +302,7 @@
     }
 }
 
-@media screen and (max-width:483px) {
+@media screen and (max-width:nth($media-query, 16)) {
     main .hero h1{
         font-size: 20px;
     }
@@ -355,7 +355,7 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:nth($media-query, 17)) {
     main .progreso h2{
         font-size: 20px;
     }
