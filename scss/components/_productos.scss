@@ -5,8 +5,7 @@ main{
             padding: 10px;
             margin-top: 10px;
             color: $color-secundario;
-            font-size: 40px;
-            font-weight: bolder;
+            @include font (40px, bolder);
         }
     }
     .productos-grid{
@@ -20,10 +19,7 @@ main{
             border: 2px $color-secundario solid;
             padding: 10px;
             background-image: url(../img/fondoprod.jpg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            @extend %background;
             box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
             -webkit-box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
             -moz-box-shadow: 10px 10px 5px 0px rgba(126, 189, 194, 0.75);
@@ -34,25 +30,23 @@ main{
             h3{
                 color: $color-cuaternario;
                 font-family: 'Alegreya', serif;
-                font-size: 19px;
-                font-weight: bold;
+                @include font (19px, bold);
             }
             p{
                 color: $color-cuaternario;
                 font-family: 'Alegreya', serif;
-                font-size: 18px;
-                font-weight: bold;
+                @include font (18px, bold);
                 margin-bottom: 15px;
             }
             a{
                 text-decoration: none;
                 color: $color-primario;
                 font-family: 'Alegreya', serif;
-                font-size: 24px;
-                font-weight: bold;
+                @include font (24px, bold);
                 background-color: $color-secundario;
                 padding: 3px;
                 border-radius: 15px;
+                transition: 1s ease-in-out;
                 &:hover{
                     box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);
                     -webkit-box-shadow: 15px -3px 17px 0px rgba(126, 189, 194, 0.75);

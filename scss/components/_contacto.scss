@@ -1,9 +1,6 @@
 .formulario{
     background-image: url(../img/fondoprod.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @extend %background;
     color: $color-secundario;
     font-family: 'Alegreya', serif;
     font-size: 18px;

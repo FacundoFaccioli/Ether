@@ -1,12 +1,9 @@
 main{
     .miperfil{
         background-image: url(../img/fondoprod.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        @extend %background;
         font-family: 'Alegreya', serif;
-        height: calc(100vh - 103.5px);
+        height: $height;
         padding: 20px;
         text-align: center;
         display: flex;
@@ -14,11 +11,22 @@ main{
         div{
             h2{
                 display: inline-flex;
-                border: 2px $color-terciario solid;
                 padding: 10px;
                 color: $color-secundario;
-                font-size: 35px;
-                font-weight: bolder;
+                @include font (35px, bolder);
+                border: 2px solid transparent;
+                animation: borderAnimation 2s infinite;
+            }
+            @keyframes borderAnimation {
+                0% {
+                    border-color: transparent;
+                }
+                50% {
+                    border-color: $color-terciario
+                }
+                100% {
+                    border-color: transparent;
+                }
             }
             h3{
                 font-size: 32px;

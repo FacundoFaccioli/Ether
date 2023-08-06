@@ -34,8 +34,7 @@
     main .productos .producto-titulo {
         padding: 10px;
         margin-top: 15px;
-        font-size: 35px;
-        font-weight: 15px;
+        @include font (35px, 15px);
     }
 }
 
@@ -43,8 +42,7 @@
     main .productos h2 {
         padding: 10px;
         margin-top: 15px;
-        font-size: 35px;
-        font-weight: 15px;
+        @include font (35px, 15px);
     }
 }
 
@@ -97,18 +95,14 @@
     .informacion .envio {
         width: 95%;
         height: 505px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, center, center);
         background-image: url(../img/fondoprod.jpg);
     }
 
     .informacion .pago {
         width: 95%;
         height: 505px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, center, center);
         background-image: url(../img/fondoprod.jpg);
     }
 
@@ -126,8 +120,7 @@
 
     main .hero h1{
         padding: 10px;
-        font-size: 45px;
-        font-weight: 20px;
+        @include font (45px, 20px);
     }
 
     main .hero img {
@@ -137,8 +130,7 @@
     }
 
     main .hero p {
-        font-size: 30px;
-        font-weight: 30px;
+        @include font (30px, 30px);
         margin: 5px;
     }
 }
@@ -169,23 +161,23 @@
 
 @media screen and (max-width:nth($media-query, 11)) {
     main .hero{
-        height: calc(100vh - 91px);
+        height: $heigt-mq;
     }
 
     main .miperfil{
-        height: calc(100vh - 91px);
+        height: $heigt-mq;
     }
 
     .informacion{
-        height: calc(100vh - 91px);
+        height: $heigt-mq;
     }
 
     .formulario{
-        height: calc(100vh - 91px);
+        height: $heigt-mq;
     }
 
     main .nosotros{
-        height: calc(100vh - 91px);
+        height: $heigt-mq;
     }
 
     main .nosotros div h2{

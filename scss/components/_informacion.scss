@@ -1,9 +1,7 @@
 .informacion{
     background-color: $color-primario;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 103.5px);
+    @include flex (flex, center, center);
+    height: $height;
     .envio{
         text-align: center;
         width: 48%;
@@ -21,6 +19,7 @@
             font-family: 'Alegreya', serif;
             font-size: 35px;
             color: $color-secundario;
+            transition: color 1s ease;
             &:hover{
                 color: $color-terciario;
             }
@@ -43,6 +42,7 @@
             font-family: 'Alegreya', serif;
             font-size: 35px;
             color: $color-secundario;
+            transition: color 1s ease;
             &:hover{
                 color:$color-terciario;
             }
