@@ -2,6 +2,7 @@ $color-primario: #231f20;
 $color-secundario: #F3DFA2;
 $color-terciario: #7EBDC2;
 $color-cuaternario: #EAEAEA;
+$height: calc(100vh - 103.5px);
 
 $media-query:
 1630px,
@@ -22,3 +23,22 @@ $media-query:
 483px,
 400px;
 
+//EXTEND//
+%background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+//MIXINS//
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin font($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+}
