@@ -3,9 +3,30 @@
     @extend %background;
     color: $color-secundario;
     font-family: 'Alegreya', serif;
-    font-size: 18px;
     min-height: $height;
     padding: 20px;
     display: flex;
     justify-content: center;
+    div{
+        h3{
+            font-size: 25px;
+        }
+        label{
+            font-size: 18px;
+        }
+        .btn-form{
+            margin-left: 30px;
+            margin-right: 30px;
+            padding: 5px;
+            border: 2px;
+            text-align: center;
+            color: $color-primario;
+            background-color: $color-secundario;
+            transition: 1s ease;
+            &:hover{
+                transform: scale(1.1);
+                background-color: $color-terciario;
+            }
+        }
+    }
 }

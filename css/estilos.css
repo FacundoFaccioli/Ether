@@ -379,11 +379,26 @@ main .nosotros {
   background-image: url(../img/fondoprod.jpg);
   color: #F3DFA2;
   font-family: 'Alegreya', serif;
-  font-size: 18px;
   min-height: calc(100vh - 107.5px);
   padding: 20px;
   display: flex;
   justify-content: center; }
+  .formulario div h3 {
+    font-size: 25px; }
+  .formulario div label {
+    font-size: 18px; }
+  .formulario div .btn-form {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 5px;
+    border: 2px;
+    text-align: center;
+    color: #231f20;
+    background-color: #F3DFA2;
+    transition: 1s ease; }
+    .formulario div .btn-form:hover {
+      transform: scale(1.1);
+      background-color: #7EBDC2; }
 
 footer {
   background-color: #231f20;
