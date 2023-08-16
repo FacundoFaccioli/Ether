@@ -3,7 +3,7 @@ main{
         background-image: url(../img/fondoprod.jpg);
         @extend %background;
         font-family: 'Alegreya', serif;
-        height: $height;
+        min-height: $height;
         padding: 20px;
         text-align: center;
         display: flex;

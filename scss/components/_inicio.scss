@@ -4,7 +4,8 @@ main{
         @extend %background;
         color: $color-secundario;
         font-family: 'Alegreya', serif;
-        height: $height;
+        width: 100%;
+        min-height: $height;
         text-align: center;
         @include flex (flex, center, center);
         flex-direction: column;
@@ -14,31 +15,31 @@ main{
             @include font (55px, 50px);
             border: 2px solid $color-terciario;
             animation: borderAnimation-hero 2s infinite ease-in-out;
-        }
-        @keyframes borderAnimation-hero {
-            0% {
-                border-width: 2px;
             }
-            50% {
-                border-width: 5px;
+            @keyframes borderAnimation-hero {
+                0% {
+                    border-width: 2px;
+                }
+                50% {
+                    border-width: 5px;
+                }
+                100% {
+                    border-width: 2px;
+                }
             }
-            100% {
-                border-width: 2px;
+            .imagenuno{
+                width: 590px;
+                height: 440px;
+                object-fit: none;
+            }  
+            .imagendos{
+                display: none;
+            }
+            p{
+                @include font (35px, 35px);
+                margin: 10px;
             }
         }
-        .imagenuno{
-            width: 80%;
-            height: 45%;
-            margin-top: 40px;
-        }  
-        .imagendos{
-            display: none;
-        }
-        p{
-            @include font (35px, 35px);
-            margin: 10px;
-        }
-    }
     .productos{
         background-color: $color-primario;
         font-family: 'Alegreya', serif;

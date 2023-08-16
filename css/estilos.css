@@ -51,7 +51,8 @@ main .hero {
   background-image: url(../img/fondoprod.jpg);
   color: #F3DFA2;
   font-family: 'Alegreya', serif;
-  height: calc(100vh - 103.5px);
+  width: 100%;
+  min-height: calc(100vh - 107.5px);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -73,9 +74,9 @@ main .hero {
   100% {
     border-width: 2px; } }
   main .hero .imagenuno {
-    width: 80%;
-    height: 45%;
-    margin-top: 40px; }
+    width: 590px;
+    height: 440px;
+    object-fit: none; }
   main .hero .imagendos {
     display: none; }
   main .hero p {
@@ -262,7 +263,7 @@ main .productos-grid {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 103.5px); }
+  min-height: calc(100vh - 107.5px); }
   .informacion .envio {
     text-align: center;
     width: 48%;
@@ -307,7 +308,7 @@ main .productos-grid {
 main .miperfil {
   background-image: url(../img/fondoprod.jpg);
   font-family: 'Alegreya', serif;
-  height: calc(100vh - 103.5px);
+  min-height: calc(100vh - 107.5px);
   padding: 20px;
   text-align: center;
   display: flex;
@@ -348,8 +349,8 @@ main .miperfil {
 main .nosotros {
   background-image: url(../img/fondoprod.jpg);
   font-family: 'Alegreya', serif;
-  height: calc(100vh - 103.5px);
   padding: 20px;
+  min-height: calc(100vh - 107.5px);
   text-align: center;
   display: flex;
   justify-content: center; }
@@ -379,7 +380,7 @@ main .nosotros {
   color: #F3DFA2;
   font-family: 'Alegreya', serif;
   font-size: 18px;
-  height: calc(100vh - 103.5px);
+  min-height: calc(100vh - 107.5px);
   padding: 20px;
   display: flex;
   justify-content: center; }
@@ -498,10 +499,6 @@ footer {
     padding: 10px;
     font-size: 45px;
     font-weight: 20px; }
-  main .hero img {
-    width: 80%;
-    height: 40%;
-    margin-top: 20px; }
   main .hero p {
     font-size: 30px;
     font-weight: 30px;
@@ -523,15 +520,13 @@ footer {
 
 @media screen and (max-width: 993px) {
   main .hero {
-    height: calc(100vh - 91px); }
+    min-height: calc(100vh - 91px); }
   main .miperfil {
-    height: calc(100vh - 91px); }
+    min-height: calc(100vh - 91px); }
   .informacion {
-    height: calc(100vh - 91px); }
+    min-height: calc(100vh - 91px); }
   .formulario {
-    height: calc(100vh - 91px); }
-  main .nosotros {
-    height: calc(100vh - 91px); }
+    min-height: calc(100vh - 91px); }
   main .nosotros div h2 {
     font-size: 35px; }
   main .nosotros div p {
@@ -571,7 +566,11 @@ footer {
   main .hero .imagenuno {
     display: none; }
   main .hero .imagendos {
-    display: flex; }
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 70%;
+    height: 40%; }
   main .productos h2 {
     font-size: 24px; }
   main .productos p {
@@ -595,7 +594,7 @@ footer {
 
 @media screen and (max-width: 483px) {
   main .hero h1 {
-    font-size: 20px; }
+    font-size: 24px; }
   main .hero p {
     font-size: 18px; }
   main .productos h2 {
@@ -623,6 +622,8 @@ footer {
     font-size: 18px; } }
 
 @media screen and (max-width: 400px) {
+  main .hero h1 {
+    font-size: 20px; }
   main .progreso h2 {
     font-size: 20px; }
   main .perfil p {

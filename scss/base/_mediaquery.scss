@@ -123,12 +123,6 @@
         @include font (45px, 20px);
     }
 
-    main .hero img {
-        width: 80%;
-        height: 40%;
-        margin-top: 20px;
-    }
-
     main .hero p {
         @include font (30px, 30px);
         margin: 5px;
@@ -161,24 +155,21 @@
 
 @media screen and (max-width:nth($media-query, 11)) {
     main .hero{
-        height: $heigt-mq;
+        min-height: $height-mq;
     }
 
     main .miperfil{
-        height: $heigt-mq;
+        min-height: $height-mq;
     }
 
     .informacion{
-        height: $heigt-mq;
+        min-height: $height-mq;
     }
 
     .formulario{
-        height: $heigt-mq;
+        min-height: $height-mq;
     }
 
-    main .nosotros{
-        height: $heigt-mq;
-    }
 
     main .nosotros div h2{
         font-size: 35px;
@@ -251,6 +242,10 @@
 
     main .hero .imagendos {
         display: flex;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        width: 70%;
+        height: 40%;
     }
 
     main .productos h2 {
@@ -296,7 +291,7 @@
 
 @media screen and (max-width:nth($media-query, 16)) {
     main .hero h1{
-        font-size: 20px;
+        font-size: 24px;
     }
 
     main .hero p {
@@ -348,6 +343,10 @@
 }
 
 @media screen and (max-width:nth($media-query, 17)) {
+    main .hero h1{
+        font-size: 20px;
+    }
+
     main .progreso h2{
         font-size: 20px;
     }
