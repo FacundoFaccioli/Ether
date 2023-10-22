@@ -47,6 +47,33 @@ header nav {
           -webkit-transform: scale(1.1) skew(15deg);
           -moz-transform: scale(1.1) skew(15deg); }
 
+.submenu {
+  padding-bottom: 30px;
+  margin-bottom: -30px; }
+  .submenu img {
+    width: 40px;
+    height: 40px; }
+  .submenu:hover .cont-carrito {
+    display: block; }
+  .submenu .cont-carrito {
+    display: none;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 100%;
+    background-color: #EAEAEA;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px; }
+  .submenu #vaciar-carrito {
+    padding: 5px;
+    margin: 3px;
+    transition: 1s ease; }
+    .submenu #vaciar-carrito:hover {
+      color: #F3DFA2;
+      background-color: #231f20;
+      transform: scale(1.1); }
+
 main .hero {
   background-image: url(../img/fondoprod.jpg);
   color: #F3DFA2;
@@ -147,10 +174,11 @@ main .prod-flex {
         font-weight: bold;
         margin-bottom: 15px; }
       main .prod-flex .card .card-body .boton-prod {
+        margin: 3px;
         transition: 1s ease; }
         main .prod-flex .card .card-body .boton-prod:hover {
           color: #F3DFA2;
-          transform: rotateY(360deg); }
+          transform: scale(1.1); }
 
 main .progreso {
   background-image: url(../img/fondoprod.jpg);
@@ -248,6 +276,7 @@ main .productos-grid {
       font-size: 24px;
       font-weight: bold;
       background-color: #F3DFA2;
+      margin: 3px;
       padding: 3px;
       border-radius: 15px;
       transition: 1s ease-in-out; }
@@ -648,3 +677,4 @@ footer {
   footer p {
     font-size: 18px;
     margin-bottom: 8px; } }
+

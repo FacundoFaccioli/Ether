@@ -105,10 +105,11 @@ main{
                     margin-bottom: 15px;
                 }
                 .boton-prod{
+                    margin: 3px;
                     transition: 1s ease;
                     &:hover{
                     color: $color-secundario;
-                    transform: rotateY(360deg);
+                    transform: scale(1.1);
                     }
                 }
             }

@@ -44,6 +44,7 @@ main{
                 font-family: 'Alegreya', serif;
                 @include font (24px, bold);
                 background-color: $color-secundario;
+                margin: 3px;
                 padding: 3px;
                 border-radius: 15px;
                 transition: 1s ease-in-out;
@@ -58,3 +59,4 @@ main{
         }
     }
 }
+

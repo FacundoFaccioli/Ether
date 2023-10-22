@@ -1,46 +1,81 @@
-header{
-    nav{
+header {
+    nav {
         background: $color-primario;
         background: linear-gradient(90deg, $color-primario 0%, $color-secundario 95%);
         background: -webkit-linear-gradient(90deg, $color-primario 0%, $color-secundario 95%);
         background: -moz-linear-gradient(90deg, $color-primario 0%, $color-secundario 95%);
         padding: 25px 10px 25px 10px;
         @include flex(flex, space-between, center);
-        div{
-            a{
-                .logo{
+        div {
+            a {
+                .logo {
                     width: 80px;
                     height: 55px;
                     margin: 5px;
                     transition: 2s ease;
-                    &:hover{
+                    &:hover {
                         transform: scale(1.2);
                     }
                 }
             }
         }
-        div{
-            ul{
+        div {
+            ul {
                 display: flex;
                 list-style: none;
-                li{
+                li {
                     margin: 15px 10px 15px 10px;
-                        .nav-link{
-                            text-decoration: none;
-                            color: $color-primario;
-                            font-family: 'Alegreya', serif;
-                            @include font(25px, 20px);
-                            border: 2px $color-primario solid;
-                            padding: 10px;
-                            transition: 1s;
-                            &:hover{
-                                transform: scale(1.1) skew(15deg);
-                                -webkit-transform: scale(1.1) skew(15deg);
-                                -moz-transform: scale(1.1) skew(15deg);
+                    .nav-link {
+                        text-decoration: none;
+                        color: $color-primario;
+                        font-family: 'Alegreya', serif;
+                        @include font(25px, 20px);
+                        border: 2px $color-primario solid;
+                        padding: 10px;
+                        transition: 1s;
+                        &:hover {
+                            transform: scale(1.1) skew(15deg);
+                            -webkit-transform: scale(1.1) skew(15deg);
+                            -moz-transform: scale(1.1) skew(15deg);
                         }
                     }
                 }
             }
+        }
+
+    }
+}
+.submenu {
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    &:hover {
+        .cont-carrito {
+            display: block;
+        }
+    }
+    .cont-carrito {
+        display: none;
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+        top: 100%;
+        background-color: $color-cuaternario;
+        padding: 20px;
+        min-height: 400px;
+        min-width: 300px;
+    }
+    #vaciar-carrito {
+        padding: 5px;
+        margin: 3px;
+        transition: 1s ease;
+        &:hover {
+            color: $color-secundario;
+            background-color: $color-primario;
+            transform: scale(1.1);
         }
     }
 }
