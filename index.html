@@ -6,21 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--META DESCRIPTION-->
-    <meta name="description" content="Descubre nuestra exclusiva colección de remeras urbanas que combinan estilo y comodidad a la perfección. Encuentra diseños auténticos que reflejen tu personalidad para que nunca dejes de brillar.">
+    <meta name="description"
+        content="Descubre nuestra exclusiva colección de remeras urbanas que combinan estilo y comodidad a la perfección. Encuentra diseños auténticos que reflejen tu personalidad para que nunca dejes de brillar.">
     <!--KEYWORDS-->
-    <meta name="keywords" content="ether, remeras, excelencia, exclusivo, beneficios, puntos, descuentos, diseño unico, precio, calidad, joven, original, brillar, envio a domicilio, estilo urbano, atencion personalizada, comodidad, autenticidad">
+    <meta name="keywords"
+        content="ether, remeras, excelencia, exclusivo, beneficios, puntos, descuentos, diseño unico, precio, calidad, joven, original, brillar, envio a domicilio, estilo urbano, atencion personalizada, comodidad, autenticidad">
     <!--PROTOCOLO OPEN GRAPH-->
     <meta property="og:type" content="E-commerce">
     <meta property="og:title" content="Ether | Iluminá tu estilo.">
     <meta property="og:url" content="https://ether1.netlify.app/">
     <meta property="og:image" content="https://ether1.netlify.app/img/logoestrella.png">
-    <meta property="og:description" content="Descubre nuestra exclusiva colección de remeras urbanas que combinan estilo y comodidad a la perfección. Encuentra diseños auténticos que reflejen tu personalidad para que nunca dejes de brillar."> 
+    <meta property="og:description"
+        content="Descubre nuestra exclusiva colección de remeras urbanas que combinan estilo y comodidad a la perfección. Encuentra diseños auténticos que reflejen tu personalidad para que nunca dejes de brillar.">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--STYLE-->
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
     <!--FAVICON-->
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Ether | Iluminá tu estilo.</title>
@@ -30,7 +35,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light barranav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img src="./img/logoestrella.png" alt="Inicio" class="logo"></a>
+                <a class="navbar-brand" href="./index.html"><img src="./img/logoestrella.png" alt="Inicio"
+                        class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -65,12 +71,14 @@
                                             <th>Producto</th>
                                             <th>Precio</th>
                                             <th>Cantidad</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     </tbody>
-                                    </table>
-                                <button id="vaciar-carrito">Vaciar carrito</button>
+                                </table>
+                                <button id="vaciar-carrito" onclick="vaciarCarritoConConfirmacion()">Vaciar
+                                    carrito</button>
                             </div>
                         </li>
                     </ul>
@@ -85,48 +93,13 @@
             <img src="./img/modelohero.jpg" alt="Modelo de remera con estampa" class="imagendos">
             <p>¡La mejor calidad y diseños únicos, pensados para vos!</p>
             <p>¡Explora un universo que fusiona tu autenticidad con una comodidad inigualable. Descubre nuestra
-            colección que te hará destacar en cualquier ocasión. ¡Compra ahora y encuentra tu look perfecto!</p>
+                colección que te hará destacar en cualquier ocasión. ¡Compra ahora y encuentra tu look perfecto!</p>
         </section>
         <section class="productos">
             <h2>¡La excelencia en su máxima expresión: los productos más codiciados del mercado!</h2>
         </section>
         <section class="prod-flex">
-            <div class="card" style="width: 18rem;">
-                <img src="./img/remerauno.png" class="card-img-top" alt="Remera estampada al frente">
-                <div class="card-body">
-                    <h3 class="card-title titulo-prod">Remera con estampa chica al frente</h3>
-                    <p class="card-text parrafo-prod">$3.200,00</p>
-                    <a href="" class="btn btn-dark boton-prod">Ver mas</a>
-                    <a href="" class="btn btn-dark boton-prod">Agregar al carrito</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./img/remerados.png" class="card-img-top" alt="Remera estampada dorso">
-                <div class="card-body">
-                    <h3 class="card-title titulo-prod">Remera con estampa grande al dorso</h3>
-                    <p class="card-text parrafo-prod">$3.800,00</p>
-                    <a href="" class="btn btn-dark boton-prod">Ver mas</a>
-                    <a href="" class="btn btn-dark boton-prod">Agregar al carrito</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./img/remeratres.png" class="card-img-top" alt="Remera lisa de color entallada">
-                <div class="card-body">
-                    <h3 class="card-title titulo-prod">Remera lisa color celeste entallada</h3>
-                    <p class="card-text parrafo-prod">$2.800,00</p>
-                    <a href="" class="btn btn-dark boton-prod">Ver mas</a>
-                    <a href="" class="btn btn-dark boton-prod">Agregar al carrito</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./img/camisa.png" class="card-img-top" alt="Remera estampada al frente">
-                <div class="card-body">
-                    <h3 class="card-title titulo-prod">Remera con estampa grande al frente</h3>
-                    <p class="card-text parrafo-prod">$3.900,00</p>
-                    <a href="" class="btn btn-dark boton-prod">Ver mas</a>
-                    <a href="" class="btn btn-dark boton-prod">Agregar al carrito</a>
-                </div>
-            </div>
+
         </section>
         <section class="productos">
             <p class="catalogo">Visitá y enamorate de nuestro catálogo <a href="./pages/productos.html">aquí</a></p>

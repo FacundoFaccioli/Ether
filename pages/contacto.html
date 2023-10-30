@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--META DESCRIPTION-->
-    <meta name="description" content="¡Estamos aquí para escucharte! Ponte en contacto con nosotros para cualquier consulta, sugerencia o comentario, y así poder seguir creciendo juntos y brindar el mejor servicio, para los mejores clientes.">
+    <meta name="description"
+        content="¡Estamos aquí para escucharte! Ponte en contacto con nosotros para cualquier consulta, sugerencia o comentario, y así poder seguir creciendo juntos y brindar el mejor servicio, para los mejores clientes.">
     <!--KEYWORDS-->
-    <meta name="keywords" content="ether, remeras, excelencia, exclusivo, atencion personalizada, clientes, mejora, comentarios, sugerencias, contacto, redes">
+    <meta name="keywords"
+        content="ether, remeras, excelencia, exclusivo, atencion personalizada, clientes, mejora, comentarios, sugerencias, contacto, redes">
     <!--PROTOCOLO OPEN GRAPH-->
     <meta property="og:type" content="E-commerce">
     <meta property="og:title" content="Ether | Contacto">
     <meta property="og:url" content="https://ether1.netlify.app/pages/contacto">
     <meta property="og:image" content="https://ether1.netlify.app/img/logoestrella.png">
-    <meta property="og:description" content="¡Estamos aquí para escucharte! Ponte en contacto con nosotros para cualquier consulta, sugerencia o comentario, y así poder seguir creciendo juntos y brindar el mejor servicio, para los mejores clientes.">
+    <meta property="og:description"
+        content="¡Estamos aquí para escucharte! Ponte en contacto con nosotros para cualquier consulta, sugerencia o comentario, y así poder seguir creciendo juntos y brindar el mejor servicio, para los mejores clientes.">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,11 +27,13 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <title>Ether | Contacto</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light barranav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logoestrella.png" alt="Inicio" class="logo"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../img/logoestrella.png" alt="Inicio"
+                        class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -38,73 +44,63 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="./productos.html">Productos</a></li>
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./informacion.html">Información</a></li>
+                            <a class="nav-link" href="./informacion.html">Información</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./perfil.html">MiPerfil</a></li>
+                            <a class="nav-link" href="./perfil.html">MiPerfil</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Contacto">Contacto</a></li>
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main class="formulario">
-        <form action="" metodh="" enctype="">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
+        <form action="https://formspree.io/f/mbjvwbve" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputEmail4">Nombre completo</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Nombre completo">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
             </div>
-            <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputCity">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Desde donde nos contactas?">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputState">Provincia</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Selecciona...</option>
+                        <option>Santa Fe</option>
+                        <option>Buenos Aires</option>
+                        <option>Entre Ríos</option>
+                        <option>Mendoza</option>
+                        <option>Córdoba</option>
+                    </select>
+                </div>
             </div>
-            <div>
-                <label for="email">E-Mail:</label>
-                <input type="email" name="email" id="email">
+            <div class="form-group">
+                <div class="form-group col-md-12">
+                    <label for="exampleFormControlTextarea1">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Escribenos tu consulta!..."></textarea>
+                </div>
             </div>
-            <br>
-            <div>
-                <h3>Género</h3>
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="genero">
-                <label for="femenino">Femenino</label>
-                <input type="radio" name="genero">
-                <label for="otro">Otro</label>
-                <input type="radio" name="genero">
-            </div>
-            <br>
-            <div>
-                <h3>Nacionalidad</h3>
-                <select name="" id="">País
-                    <option value="" disabled selected>Selecciona tu país</option>
-                    <option value="">Argentina</option>
-                    <option value="">Chile</option>
-                    <option value="">Uruguay</option>
-                    <option value="">Paraguay</option>
-                    <option value="">Bolivia</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <h3>Sos cliente frecunte?</h3>
-                <label for="cliente">Si</label>
-                <input type="radio" name="cliente">
-                <label for="cliente">No</label>
-                <input type="radio" name="cliente">
-            </div>
-            <br>
-            <div>
-                <h3>Escribinos tu consulta!</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <input class="btn-form" type="submit">
-                <input class="btn-form" type="reset">
-            </div>
+            </br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </main>
     <footer id="Contacto">
@@ -114,16 +110,21 @@
                 <img src="../img/logoestrella.png" alt="Logo Ether" class="footer-logo">
             </div>
             <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook" class="social"></a>
-                <a href="https://twitter.com/home?lang=es" target="_blank"><img src="../img/twitter.png" alt="Logo Twitter" class="social"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram" class="social"></a>
-                <a href="https://www.tiktok.com/es/" target="_blank"><img src="../img/tiktok.png" alt="Logo Tiktok" class="social"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"
+                        class="social"></a>
+                <a href="https://twitter.com/home?lang=es" target="_blank"><img src="../img/twitter.png"
+                        alt="Logo Twitter" class="social"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                        alt="Logo Instagram" class="social"></a>
+                <a href="https://www.tiktok.com/es/" target="_blank"><img src="../img/tiktok.png" alt="Logo Tiktok"
+                        class="social"></a>
             </div>
         </section>
         <a href="../pages/contacto.html" class="footer-contact">Ponete en contacto con nosotros</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
