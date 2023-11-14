@@ -77,6 +77,9 @@
                                     <tbody>
                                     </tbody>
                                 </table>
+                                <div>
+                                    <span>Total:</span><span id="total-carrito"></span>
+                                </div>
                                 <button id="vaciar-carrito" onclick="vaciarCarritoConConfirmacion()">Vaciar
                                     carrito</button>
                             </div>
@@ -97,6 +100,10 @@
         </section>
         <section class="productos">
             <h2>¡La excelencia en su máxima expresión: los productos más codiciados del mercado!</h2>
+        </section>
+        <section class="buscador">
+            <h3>Busca por nombre</h3>
+            <input id="buscador-input" oninput="buscarProductoPorNombre()" />
         </section>
         <section class="prod-flex">
 

@@ -27,20 +27,19 @@ const productos = [
         stock: 10,
         imagen: './img/remeracinco.png',
     }
-];
+]
 
-const carrito = [];
-
-
-
+const carrito = []
 
 function mostrarProductos() {
-    const productosContainer = document.querySelector('.prod-flex');
+    const productosContainer = document.querySelector('.prod-flex')
+    const nuevoContenedor = document.createElement('div')
+    const busqueda = document.getElementById('buscador-input').value
 
-    productos.forEach((producto) => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.style.width = '18rem';
+    productos.filter(producto => producto.nombre.toLowerCase().includes(busqueda.toLowerCase())).forEach((producto) => {
+        const card = document.createElement('div')
+        card.className = 'card'
+        card.style.width = '18rem'
         card.innerHTML = `
             <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
             <div class="card-body">
@@ -48,13 +47,19 @@ function mostrarProductos() {
                 <p class="card-text parrafo-prod">$${producto.precio.toFixed(2)}</p>
                 <button class="btn btn-dark boton-prod" onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
             </div>
-        `;
-        productosContainer.appendChild(card);
-    });
+        `
+        nuevoContenedor.appendChild(card)
+    })
+
+    productosContainer.innerHTML = nuevoContenedor.innerHTML
+}
+
+function buscarProductoPorNombre() {
+    mostrarProductos()
 }
 
 function agregarProductoAlLocalStorage(producto) {
-    const carrito = localStorage.getItem("carrito");
+    const carrito = localStorage.getItem("carrito")
     if (carrito) {
         localStorage.setItem("carrito", JSON.stringify([...JSON.parse(carrito), producto]))
     } else {
@@ -63,8 +68,7 @@ function agregarProductoAlLocalStorage(producto) {
 }
 
 function agregarCantidadAlProducto(producto) {
-    const carrito = localStorage.getItem("carrito");
-    console.log("HOLA")
+    const carrito = localStorage.getItem("carrito")
     if (carrito) {
         const carritoViejo = JSON.parse(carrito)
         const productoViejo = carritoViejo.find(productoEnCarrito => productoEnCarrito.id == producto.id)
@@ -74,12 +78,10 @@ function agregarCantidadAlProducto(producto) {
 }
 
 function restarCantidadAlProducto(producto) {
-    const carrito = localStorage.getItem("carrito");
-    console.log("HOLA")
+    const carrito = localStorage.getItem("carrito")
     if (carrito) {
         const carritoViejo = JSON.parse(carrito)
         const productoViejo = carritoViejo.find(productoEnCarrito => productoEnCarrito.id == producto.id)
-        console.log(productoViejo)
         productoViejo.cantidad--
         if (productoViejo.cantidad > 0) {
             localStorage.setItem('carrito', JSON.stringify(carritoViejo))
@@ -92,33 +94,32 @@ function restarCantidadAlProducto(producto) {
 
 
 function agregarAlCarrito(productoId) {
-    const producto = productos.find((p) => p.id === productoId);
+    const producto = productos.find((p) => p.id === productoId)
 
     if (producto && producto.stock > 0) {
 
-        const productoEnCarrito = getCarrito().find((p) => p.id === producto.id);
+        const productoEnCarrito = getCarrito().find((p) => p.id === producto.id)
         if (productoEnCarrito) {
 
             agregarCantidadAlProducto(productoEnCarrito)
         } else {
 
-            producto.cantidad = 1;
+            producto.cantidad = 1
             agregarProductoAlLocalStorage(producto)
         }
 
-        producto.stock--;
+        producto.stock--
 
 
-        actualizarCarritoEnDOM();
+        actualizarCarritoEnDOM()
     } else {
-        alert('No hay suficiente stock de este producto.');
+        alert('No hay suficiente stock de este producto.')
     }
 }
 
 
 function getCarrito() {
     const carritoDesdeLocalStorage = localStorage.getItem('carrito')
-    console.log("carrito", carritoDesdeLocalStorage)
     if (carritoDesdeLocalStorage) {
         return JSON.parse(carritoDesdeLocalStorage)
     } else {
@@ -128,11 +129,11 @@ function getCarrito() {
 
 
 function actualizarCarritoEnDOM() {
-    const carritoContainer = document.querySelector('#shop-list tbody');
-    carritoContainer.innerHTML = '';
+    const carritoContainer = document.querySelector('#shop-list tbody')
+    carritoContainer.innerHTML = ''
 
     getCarrito().forEach((producto) => {
-        const fila = document.createElement('tr');
+        const fila = document.createElement('tr')
         fila.innerHTML = `
             <td><img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen"></td>
             <td>${producto.nombre}</td>
@@ -143,24 +144,24 @@ function actualizarCarritoEnDOM() {
                 <button onclick="restarCantidad(${producto.id})"><i data-feather="minus"></i></button>
                 <button onclick="borrarProducto(${producto.id})"><i data-feather="x"></i></button>
             </td>
-        `;
-        carritoContainer.appendChild(fila);
-    });
+        `
+        carritoContainer.appendChild(fila)
+    })
     feather.replace()
 
-    const totalCarrito = calcularTotalCarrito();
-    const totalCarritoElement = document.querySelector('#total-carrito');
-    totalCarritoElement.textContent = `$${totalCarrito.toFixed(2)}`;
+    const totalCarrito = calcularTotalCarrito()
+    const totalCarritoElement = document.querySelector('#total-carrito')
+    totalCarritoElement.textContent = `$${totalCarrito.toFixed(2)}`
 }
 
 addEventListener("load", (event) => {
     actualizarCarritoEnDOM()
-});
+})
 
 
 
 function calcularTotalCarrito() {
-    return getCarrito().reduce((total, producto) => total + producto.precio, 0);
+    return getCarrito().reduce((total, producto) => total + (producto.precio * producto.cantidad), 0)
 }
 
 
@@ -172,75 +173,66 @@ function vaciarCarritoConConfirmacion() {
         denyButtonText: 'No',
     }).then((result) => {
         if (result.isConfirmed) {
-            Swal.fire('Carrito vaciado', '', 'success');
+            Swal.fire('Carrito vaciado', '', 'success')
 
 
             localStorage.removeItem('carrito')
 
 
             productos.forEach((producto) => {
-                producto.stock = 10; 
-            });
+                producto.stock = 10
+            })
 
 
-            actualizarCarritoEnDOM();
-
-
-            guardarProductosEnLocalStorage();
-
+            actualizarCarritoEnDOM()
         } else {
-            Swal.fire('Seguí comprando tranca', '', 'info');
+            Swal.fire('Seguí comprando tranca', '', 'info')
         }
-    });
+    })
 }
 
 function sumarCantidad(productoId) {
-    const productoEnCarrito = getCarrito().find((p) => p.id === productoId);
+    const productoEnCarrito = getCarrito().find((p) => p.id === productoId)
 
     if (productoEnCarrito) {
         agregarCantidadAlProducto(productoEnCarrito)
-        actualizarCarritoEnDOM();
-        guardarProductosEnLocalStorage();
+        actualizarCarritoEnDOM()
     }
 }
 function borrarProducto(productoId) {
-    const producto = getCarrito().find((p) => p.id === productoId);
+    const producto = getCarrito().find((p) => p.id === productoId)
 
     if (producto) {
         localStorage.setItem('carrito', JSON.stringify(getCarrito().filter(productoEnCarrito => productoEnCarrito.id != producto.id)))
-        actualizarCarritoEnDOM();
-        guardarProductosEnLocalStorage();
+        actualizarCarritoEnDOM()
     }
 }
 
 
 function restarCantidad(productoId) {
-    const productoEnCarrito = getCarrito().find((p) => p.id === productoId);
+    const productoEnCarrito = getCarrito().find((p) => p.id === productoId)
 
     if (productoEnCarrito && productoEnCarrito.cantidad > 0) {
         restarCantidadAlProducto(productoEnCarrito)
-        actualizarCarritoEnDOM();
-        guardarProductosEnLocalStorage();
+        actualizarCarritoEnDOM()
     }
 }
 
 
 function eliminarProducto(productoId) {
-    const index = carrito.findIndex((p) => p.id === productoId);
+    const index = carrito.findIndex((p) => p.id === productoId)
 
     if (index !== -1) {
-        const producto = carrito[index];
+        const producto = carrito[index]
 
         if (producto.cantidad > 1) {
-            producto.cantidad--;
+            producto.cantidad--
         } else {
-            carrito.splice(index, 1);
+            carrito.splice(index, 1)
         }
 
-        actualizarCarritoEnDOM();
-        guardarProductosEnLocalStorage();
+        actualizarCarritoEnDOM()
     }
 }
 
-
-window.addEventListener('load', mostrarProductos);
+window.addEventListener('load', mostrarProductos)

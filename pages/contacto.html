@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!--FAVICON-->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js" defer></script>
     <title>Ether | Contacto</title>
 </head>
 
@@ -64,11 +65,11 @@
         </nav>
     </header>
     <main class="formulario">
-        <form action="https://formspree.io/f/mbjvwbve" method="POST">
+        <form id="form-contact">
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="inputEmail4">Nombre completo</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Nombre completo">
+                    <input type="text" class="form-control" id="inputName" name="name" placeholder="Nombre completo">
                 </div>
                 <div class="form-group col-md-12">
                     <label for="inputEmail4">Email</label>
@@ -114,7 +115,7 @@
                 <div class="form-group col-md-12">
                     <label for="exampleFormControlTextarea1">Mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Escribenos tu consulta!..."></textarea>
+                        placeholder="Escribenos tu consulta!..." name="description"></textarea>
                 </div>
             </div>
             </br>
@@ -143,6 +144,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>

@@ -181,3 +181,14 @@ main{
         }
     }
 }
+
+.buscador {
+    background-color: #231f20;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    & input {
+        margin-left: 20px;
+    }
+}
