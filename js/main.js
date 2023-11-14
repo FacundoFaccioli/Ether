@@ -1,4 +1,4 @@
-const productos = [
+const productosEstaticos = [
     {
         id: 1,
         nombre: "Remera con estampa chica al frente",
@@ -28,6 +28,30 @@ const productos = [
         imagen: './img/remeracinco.png',
     }
 ]
+function Producto(id, nombre, precio, stock, imagen) {
+    this.id = id;
+    this.nombre = nombre;
+    this.precio = precio;
+    this.stock = stock;
+    this.imagen = imagen;
+
+    this.obtenerElementoHtml = function () {
+        const card = document.createElement('div')
+        card.className = 'card'
+        card.style.width = '18rem'
+        card.innerHTML = `
+            <img src="${this.imagen}" class="card-img-top" alt="${this.nombre}">
+            <div class="card-body">
+                <h3 class="card-title titulo-prod">${this.nombre}</h3>
+                <p class="card-text parrafo-prod">$${this.precio.toFixed(2)}</p>
+                <button class="btn btn-dark boton-prod" onclick="agregarAlCarrito(${this.id})">Agregar al carrito</button>
+            </div>
+        `
+        return card;
+    }
+}
+
+const productos = productosEstaticos.map((producto) => new Producto(producto.id, producto.nombre, producto.precio, producto.stock, producto.imagen))
 
 const carrito = []
 
@@ -36,20 +60,9 @@ function mostrarProductos() {
     const nuevoContenedor = document.createElement('div')
     const busqueda = document.getElementById('buscador-input').value
 
-    productos.filter(producto => producto.nombre.toLowerCase().includes(busqueda.toLowerCase())).forEach((producto) => {
-        const card = document.createElement('div')
-        card.className = 'card'
-        card.style.width = '18rem'
-        card.innerHTML = `
-            <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
-            <div class="card-body">
-                <h3 class="card-title titulo-prod">${producto.nombre}</h3>
-                <p class="card-text parrafo-prod">$${producto.precio.toFixed(2)}</p>
-                <button class="btn btn-dark boton-prod" onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
-            </div>
-        `
-        nuevoContenedor.appendChild(card)
-    })
+    productos
+        .filter(producto => producto.nombre.toLowerCase().includes(busqueda.toLowerCase()))
+        .forEach((producto) => nuevoContenedor.appendChild(producto.obtenerElementoHtml()))
 
     productosContainer.innerHTML = nuevoContenedor.innerHTML
 }
