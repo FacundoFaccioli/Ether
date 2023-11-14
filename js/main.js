@@ -28,12 +28,13 @@ const productosEstaticos = [
         imagen: './img/remeracinco.png',
     }
 ]
+
 function Producto(id, nombre, precio, stock, imagen) {
-    this.id = id;
-    this.nombre = nombre;
-    this.precio = precio;
-    this.stock = stock;
-    this.imagen = imagen;
+    this.id = id
+    this.nombre = nombre
+    this.precio = precio
+    this.stock = stock
+    this.imagen = imagen
 
     this.obtenerElementoHtml = function () {
         const card = document.createElement('div')
@@ -47,7 +48,7 @@ function Producto(id, nombre, precio, stock, imagen) {
                 <button class="btn btn-dark boton-prod" onclick="agregarAlCarrito(${this.id})">Agregar al carrito</button>
             </div>
         `
-        return card;
+        return card
     }
 }
 
